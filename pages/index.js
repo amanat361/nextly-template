@@ -27,11 +27,9 @@ const Home = () => {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        pretitle="Firewave Benefits"
+        title=" Why should you should choose our team">
+        Choosing Firewave means embracing a future where innovation and excellence converge. Our expertise in NextJS 13.4+, d3 data visualization, GPT-4 function calls, and revolutionary Langchain agents positions us as trailblazers in the tech realm. We're not just about efficiency; we're about crafting solutions that reshape industries. Our track record speaks volumes – clients have witnessed an astounding 80% reduction in operational time through our program rebuilds.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
