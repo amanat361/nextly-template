@@ -22,7 +22,7 @@ const Hero = () => {
                 href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
                 target="_blank"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-rose-600 rounded-md ">
                 Download for Free
               </a>
               <a
