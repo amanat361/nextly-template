@@ -5,10 +5,10 @@ import Container from "./container";
 
 export default function Footer() {
   const navigation = [
-    "Product",
-    "Features",
-    "Pricing",
-    "Company",
+    "Team",
+    "Projects",
+    "Skills",
+    "Testimonials",
     "Blog",
   ];
   const legal = ["Terms", "Privacy", "Legal"];
@@ -20,34 +20,15 @@ export default function Footer() {
             <div>
               {" "}
               <Link href="/" className="flex items-center space-x-2 text-2xl font-medium text-rose-500 dark:text-gray-100">
-                    <Image
-                      src="/img/logo.svg"
-                      alt="N"
-                      width="32"
-                      height="32"
-                      className="w-8"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 448 512" className="fill-rose-600">
+                    <path d="M159.3 5.4c7.8-7.3 19.9-7.2 27.7 .1c27.6 25.9 53.5 53.8 77.7 84c11-14.4 23.5-30.1 37-42.9c7.9-7.4 20.1-7.4 28 .1c34.6 33 63.9 76.6 84.5 118c20.3 40.8 33.8 82.5 33.8 111.9C448 404.2 348.2 512 224 512C98.4 512 0 404.1 0 276.5c0-38.4 17.8-85.3 45.4-131.7C73.3 97.7 112.7 48.6 159.3 5.4zM225.7 416c25.3 0 47.7-7 68.8-21c42.1-29.4 53.4-88.2 28.1-134.4c-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5c-16.5-21-46-58.5-62.8-79.8c-6.3-8-18.3-8.1-24.7-.1c-33.8 42.5-50.8 69.3-50.8 99.4C112 375.4 162.6 416 225.7 416z"/>
+                  </svg>
                   <span className="bg-gradient-to-r from-red-500 to-orange-500 text-transparent bg-clip-text">Firewave</span>
               </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
               Firewave is a technology-driven innovation company committed to delivering cutting-edge solutions that empower businesses and drive progress.
-            </div>
-
-            <div className="mt-5">
-              <a
-                href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
-                target="_blank"
-                rel="noopener"
-                className="relative block w-44">
-                <Image
-                  src="/img/vercel.svg"
-                  alt="Powered by Vercel"
-                  width="212"
-                  height="44"
-                />
-              </a>
             </div>
           </div>
 
@@ -105,19 +86,22 @@ export default function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
+          Copyright © {new Date().getFullYear()}. Made with ♥ by
           <a
-            href="https://web3templates.com/"
+            className="underline ml-1"
+            href="https://www.linkedin.com/in/samin-amanat/"
             target="_blank"
-            rel="noopener">
-            Web3Templates.
-          </a>{" "}
-          Illustrations from{" "}
+            rel="noopener"
+          >
+            Sam Amanat.
+          </a>
+          <span className="ml-2">Illustrations from</span>
           <a
-            href="https://www.glazestock.com/"
+            className="underline ml-1"
+            href="https://lottiefiles.com/"
             target="_blank"
             rel="noopener ">
-            Glazestock
+            Lottie
           </a>
         </div>
       </Container>
