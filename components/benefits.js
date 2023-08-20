@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import Container from "./container";
 
+import Lottie from "lottie-react";
+
 const Benefits = (props) => {
   const { data } = props;
   return (
@@ -12,15 +14,7 @@ const Benefits = (props) => {
             props.imgPos === "right" ? "lg:order-1" : ""
           }`}>
           <div>
-            <Image
-              src={data.image}
-              width="521"
-              height="auto"
-              alt="Benefits"
-              className={"object-cover"}
-              placeholder="blur"
-              blurDataURL={data.image.src}
-            />
+            <Lottie animationData={data.animation} loop={true} />
           </div>
         </div>
 

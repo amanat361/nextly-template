@@ -10,6 +10,9 @@ import {
 import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
+import codingAnimation from "../public/animations/coding.json";
+import skillsAnimation from "../public/animations/skills.json";
+
 const benefitOne = {
   title: "Highlights",
   desc: "Discover the transformative elements that set Firewave apart, propelling your projects into a realm of unparalleled innovation.",
@@ -31,6 +34,7 @@ const benefitOne = {
       icon: <CursorArrowRaysIcon />,
     },
   ],
+  animation: codingAnimation,
 };
 
 const benefitTwo = {
@@ -54,6 +58,7 @@ const benefitTwo = {
       icon: <SunIcon />,
     },
   ],
+  animation: skillsAnimation,
 };
 
 

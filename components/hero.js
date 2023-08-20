@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Container from "./container";
-import heroImg from "../public/img/hero.png";
+import Lottie from "lottie-react";
+import pclottie from "../public/animations/pclottie.json";
 
 const Hero = () => {
   return (
@@ -46,7 +46,8 @@ const Hero = () => {
         </div>
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="">
-            <Image
+            <Lottie animationData={pclottie} loop={true}/>
+            {/* <Image
               src={heroImg}
               width="616"
               height="617"
@@ -54,7 +55,7 @@ const Hero = () => {
               alt="Hero Illustration"
               loading="eager"
               placeholder="blur"
-            />
+            /> */}
           </div>
         </div>
       </Container>
