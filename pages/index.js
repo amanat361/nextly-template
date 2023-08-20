@@ -19,8 +19,14 @@ const Home = () => {
         <title>Firewave Development</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="Elevate your projects with Firewave – a forward-thinking tech startup specializing in NextJS 13.4+, d3 data visualization, GPT-4 function calls, and more. Join us in shaping the future of technology."
         />
+        <meta
+          name="keywords"
+          content="nextjs, d3, gpt-4, langchain, react, javascript, typescript, web3, blockchain, solidity, smart contracts, web development, software development, technology, innovation, startup, tech startup, tech company, tech, coding, programming, developer, engineer, software engineer, software developer, web developer, front end developer, front end engineer, full stack developer, full stack engineer, full stack, front end, back end"
+        />
+        <meta name="author" content="Firewave Development" />
+        <meta name="og:title" content="Firewave Development" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
