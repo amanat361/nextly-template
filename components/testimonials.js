@@ -13,8 +13,7 @@ const Testimonials  = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+              Firewave transformed our project with <Mark>cutting-edge tech</Mark>. Their personal touch and dedication made us feel like part of their family.
             </p>
 
             <Avatar
@@ -27,8 +26,7 @@ const Testimonials  = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+              Innovative problem solvers, top-tier talent. Firewave delivered exceptional results and <Mark>streamlined</Mark> our operations.
             </p>
 
             <Avatar
@@ -41,8 +39,7 @@ const Testimonials  = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve seen. I
-              would use this for anything.
+              Firewave's passion and expertise are unmatched. They <Mark>elevated</Mark> our project and left a lasting impact on our digital presence.
             </p>
 
             <Avatar
@@ -81,7 +78,7 @@ function Mark(props) {
   return (
     <>
       {" "}
-      <mark className="text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">
+      <mark className="text-rose-800 bg-rose-100 rounded-md ring-rose-100 ring-4 dark:ring-rose-900 dark:bg-rose-900 dark:text-rose-200">
         {props.children}
       </mark>{" "}
     </>

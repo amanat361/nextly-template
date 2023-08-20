@@ -12,45 +12,45 @@ import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
   title: "Highlights",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  desc: "Discover the transformative elements that set Firewave apart, propelling your projects into a realm of unparalleled innovation.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Cutting-Edge Frameworks, Unleashed",
+      desc: "Dive into the future with Firewave as we master the latest tools like NextJS 13.4+ and d3, crafting dynamic interfaces that mesmerize and captivate user experiences.",
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "AI-Powered Progress, Today",
+      desc: "Unleash the power of GPT-4 function call APIs and Langchain agents, infusing artificial intelligence into your projects, propelling your solutions into the forefront of innovation.",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Operational Efficiency Redefined",
+      desc: "Witness operational time slashed by an astonishing 80% through our program rebuilds, ensuring that your projects achieve peak performance while optimizing resources.",
       icon: <CursorArrowRaysIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
+  title: "Skills that Make a Difference",
   desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
+      title: "Effective Communicators",
+      desc: "Our team members excel not just in code but also in conveying complex technical ideas with clarity. Experience how our skilled professionals bridge the communication gap, ensuring seamless collaboration and project success.",
       icon: <DevicePhoneMobileIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
+      title: "Innovative Problem Solvers",
+      desc: "With a knack for hands-on solution finding, our team thrives in tackling intricate challenges. Witness their creativity in action as they bring fresh perspectives and innovative approaches to every project they engage with.",
       icon: <AdjustmentsHorizontalIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
+      title: "Proven Impact, Exceptional Expertise",
+      desc: "Harness the capabilities of engineers handpicked from top universities and seasoned with diverse industry backgrounds. Their contributions have consistently amplified teams and projects, elevating outcomes with a wealth of technical proficiency and innovative thinking.",
       icon: <SunIcon />,
     },
   ],
