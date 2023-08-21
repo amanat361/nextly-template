@@ -42,9 +42,7 @@ const Home = () => {
       <SectionTitle
         pretitle="Watch a video"
         title="Learn how to fullfil your needs">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+        It's not your average cat video, but it's definitely worth a watch. See how our product tackles your requirements head-on – no fluff, just facts. Hit that play button and let's get down to business!
       </SectionTitle>
       <Video />
       <SectionTitle

@@ -39,7 +39,7 @@ const benefitOne = {
 
 const benefitTwo = {
   title: "Skills that Make a Difference",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  desc: "In a landscape where success demands more than just ideas, a proficient team is your greatest asset. At Firewave, we recognize the pivotal role of expertise. With us, you're not just envisioning success; you're ensuring it through unparalleled proficiency.",
   image: benefitTwoImg,
   bullets: [
     {
