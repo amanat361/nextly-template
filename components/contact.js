@@ -10,13 +10,15 @@ function Field({ label, type, placeholder }) {
     );
 }
 
-function Info( { icon, title, content }) {
+function Info( { icon, title, content, link }) {
     return (
-        <div className="flex flex-col gap-4 items-start justify-center border-2 border-rose-600 p-4 rounded">
+        <a href={link} target="_blank" rel="noreferrer">
+        <div className="flex flex-col gap-4 items-start justify-center border-2 border-rose-600 p-4 rounded hover:bg-rose-600 hover:text-white transition">
             <FontAwesomeIcon icon={icon} className="h-6" />
             <h2 className="text-lg font-semibold">{title}</h2>
             <p>{content}</p>
         </div>
+        </a>
     );
 }
 
@@ -48,9 +50,9 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-col gap-4 col-span-full sm:col-span-1">
-                <Info icon={faEnvelope} title="Email us" content="contact@firewave.dev" />
-                <Info icon={faPhone} title="Call us" content="925-451-2502" />
-                <Info icon={faMapPin} title="Location" content="San Francisco, CA" />
+                <Info icon={faEnvelope} title="Email us" content="contact@firewave.dev" link="mailto:contact@firewave.dev" />
+                <Info icon={faPhone} title="Call us" content="925-451-2502" link="tel:925-451-2502" />
+                <Info icon={faMapPin} title="Location" content="San Francisco, CA" link="https://goo.gl/maps/inevejAFW6WsbnsK6" />
                 <button className="bg-rose-600 text-white rounded-md p-2 col-start-3">Send</button>
             </div>
         </div>
