@@ -107,22 +107,22 @@ const Team = () => {
 
             <div className="p-4 flex flex-col gap-8 max-w-6xl mx-auto">
                 <Member
-                    name="Ahljenn Malari"
-                    image="/team/AJrembg.png"
-                    title="Frontend Engineer"
-                    description="John Doe is the CEO of Firewave Development. He is a full stack developer with experience in NextJS, React, and TailwindCSS. He is also a student at the University of California, Berkeley."
+                    name="Sam Amanat"
+                    image="/team/Samrembg.png"
+                    title="Founder"
+                    description="Hey! I'm Sam, and I'm the founder of Firewave Development. I'm a full stack developer who loves to build things. I put this team together to help me build things faster and better."
+                />
+                <Member
+                    name="Ethan Gutierrez"
+                    image="/team/Ethanrembg.png"
+                    title="Backend Engineer"
+                    description="What's up! I'm Ethan, and I'm a backend engineer at Firewave Development. I'm a backend engineer who loves breaking things down and building them back up."
                 />
                 <Member
                     name="Ahljenn Malari"
                     image="/team/AJrembg.png"
                     title="Frontend Engineer"
-                    description="John Doe is the CEO of Firewave Development. He is a full stack developer with experience in NextJS, React, and TailwindCSS. He is also a student at the University of California, Berkeley."
-                />
-                <Member
-                    name="Ahljenn Malari"
-                    image="/team/AJrembg.png"
-                    title="Frontend Engineer"
-                    description="John Doe is the CEO of Firewave Development. He is a full stack developer with experience in NextJS, React, and TailwindCSS. He is also a student at the University of California, Berkeley."
+                    description="Hi! I'm AJ, and I'm a frontend engineer at Firewave Development. I'm a frontend engineer who loves to make things look good and work well."
                 />
             </div>
             
