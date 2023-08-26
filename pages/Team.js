@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faGraduationCap, faBriefcase, faBolt } from "@fortawesome/free-solid-svg-icons";
 
+import team from "../components/team";
+
 function Detail(props) {
     return (
         <>
@@ -15,7 +17,7 @@ function Detail(props) {
             <FontAwesomeIcon icon={props.icon} className="w-7 h-7 text-rose-50" />
             </div>
             <div>
-            <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
+            <h4 className="text-xl font-medium text-rose-600 dark:text-gray-200">
                 {props.title}
             </h4>
             <p className="mt-1 text-gray-500 dark:text-gray-400">
@@ -40,45 +42,49 @@ const Details = ( { education, experience, skills } ) => {
 
 const Socials = () => {
     return (
-        <div className="flex gap-8">
-            <FontAwesomeIcon icon={faGithub} className="h-8" />
-            <FontAwesomeIcon icon={faLinkedin} className="h-8" />
-            <FontAwesomeIcon icon={faTwitter} className="h-8" />
+        <div className="flex gap-8 justify-center flex-1">
+            <FontAwesomeIcon icon={faGithub} className="h-6" />
+            <FontAwesomeIcon icon={faLinkedin} className="h-6" />
+            <FontAwesomeIcon icon={faTwitter} className="h-6" />
         </div>
     );
 }
 
-const Member = ({ name, image, title, description }) => {
+const Header = ( {name, title, description} ) => {
     return (
-        <div className="flex flex-col gap-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="flex flex-col justify-center items-center">
-                    <img src={image} className="rounded-2xl w-full object-contain object-top"/>
+        <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 sm:flex-row items-center">
+                <div>
+                    <h1 className="text-2xl font-bold">{name}</h1>
+                    <h2 className="text-xl font-semibold">{title}</h2>
                 </div>
-                <div className="flex flex-col justify-start gap-4">
-                    <div className="flex flex-col gap-2">
-                        <div className="flex flex-col gap-2 sm:flex-row justify-between items-center">
-                            <div>
-                                <h1 className="text-2xl font-bold">{name}</h1>
-                                <h2 className="text-xl font-semibold">{title}</h2>
-                            </div>
-                            <Socials />
-                        </div>
-                        <p className="text-lg">{description}</p>
-                    </div>
-                    <Details
-                        education="University of California, Berkeley"
-                        experience="Firewave Development"
-                        skills="NextJS, React, TailwindCSS"
-                    />
-                </div>
+                <Socials />
             </div>
-            <hr></hr>
+            <p className="text-lg">{description}</p>
+        </div>
+    );
+}
+
+const Photo = ({ image }) => {
+    return (
+        <img src={image.source} className={`h-[50vh] sm:w-1/2 object-cover object-top rounded-3xl shadow-2xl dark:shadow-none ${image.shadow} ${image.color}`}/>
+    );
+}
+
+const Member = ({ info, details, image, flipped }) => {
+    return (
+        <div className={`flex flex-col sm:flex-row p-4 gap-8 ${flipped && 'sm:flex-row-reverse'}`}>
+            <Photo image={...image} />
+            <div className="flex flex-col justify-center gap-4 sm:w-1/2">
+                <Header {...info} />
+                <Details {...details} />
+            </div>
         </div>
     );
 }
 
 const Team = () => {
+
     return (
         <>
             <Head>
@@ -105,25 +111,8 @@ const Team = () => {
                 We're not just about efficiency; we're about crafting solutions that reshape industries. Our track record speaks volumes – clients have witnessed an astounding 80% reduction in operational time through our program rebuilds.
             </SectionTitle>
 
-            <div className="p-4 flex flex-col gap-8 max-w-6xl mx-auto">
-                <Member
-                    name="Sam Amanat"
-                    image="/team/Samrembg.png"
-                    title="Founder"
-                    description="Hey! I'm Sam, and I'm the founder of Firewave Development. I'm a full stack developer who loves to build things. I put this team together to help me build things faster and better."
-                />
-                <Member
-                    name="Ethan Gutierrez"
-                    image="/team/Ethanrembg.png"
-                    title="Backend Engineer"
-                    description="What's up! I'm Ethan, and I'm a backend engineer at Firewave Development. I'm a backend engineer who loves breaking things down and building them back up."
-                />
-                <Member
-                    name="Ahljenn Malari"
-                    image="/team/AJrembg.png"
-                    title="Frontend Engineer"
-                    description="Hi! I'm AJ, and I'm a frontend engineer at Firewave Development. I'm a frontend engineer who loves to make things look good and work well."
-                />
+            <div className="flex flex-col max-w-6xl mx-auto gap-20">
+                {team.map((member, index) => <Member {...member} flipped={index%2==0} key={index} />)}
             </div>
             
             <Footer />
