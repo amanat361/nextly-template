@@ -22,11 +22,11 @@ function Info( { icon, title, content }) {
 
 export default function Contact() {
     return (
-        <div className="grid grid-cols-3 gap-4 max-w-6xl mx-auto">
-            <div className="flex flex-col col-span-2 justify-between">
-                
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-4 max-w-6xl mx-auto">
+           
+            <div className="flex flex-col col-span-2 justify-between gap-4">
                 <div className='flex flex-col gap-4'>
-                    <h1 className="text-2xl font-bold">Name</h1>
+                    <h1 className="text-2xl font-bold">Who's reaching out?</h1>
                     <div className="grid grid-cols-2 gap-4 h-min">
                         <Field label="First Name" type="text" placeholder="John" />
                         <Field label="Last Name" type="text" placeholder="Doe" />
@@ -34,7 +34,7 @@ export default function Contact() {
                 </div>
 
                 <div className="flex flex-col gap-4">
-                    <h1 className="text-2xl font-bold">Contact</h1>
+                    <h1 className="text-2xl font-bold">How can we reach you?</h1>
                     <div className="grid grid-cols-2 gap-4">
                         <Field label="Email" type="email" placeholder="john@gmail.com" />
                         <Field label="Phone" type="tel" placeholder="123-456-7890" />
@@ -42,11 +42,12 @@ export default function Contact() {
                 </div>
 
                 <div className="flex flex-col gap-4">
-                    <h1 className="text-2xl font-bold">Message</h1>
+                    <h1 className="text-2xl font-bold">What can we do for you?</h1>
                     <Field label="Message" type="text" placeholder="Hello, I would like to..." />
                 </div>
             </div>
-            <div className="flex flex-col gap-4">
+
+            <div className="flex flex-col gap-4 col-span-full sm:col-span-1">
                 <Info icon={faEnvelope} title="Email us" content="contact@firewave.dev" />
                 <Info icon={faPhone} title="Call us" content="925-451-2502" />
                 <Info icon={faMapPin} title="Location" content="San Francisco, CA" />
