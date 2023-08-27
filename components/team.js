@@ -14,6 +14,14 @@ const team = [
             source: "/team/Stock7.jpg",
             color: "bg-slate-200",
             shadow: "shadow-slate-800"
+        },
+        socials: {
+            github: "https://github.com/amanat361",
+            linkedin: "https://www.linkedin.com/in/samin-amanat/",
+            twitter: "https://twitter.com/amanat361",
+            email: "sam@firewave.dev",
+            phone: "925-451-2502",
+            discord: "https://discordapp.com/users/215009414099369984",
         }
     },
     {
@@ -32,6 +40,14 @@ const team = [
             color: "bg-zinc-200",
             shadow: "shadow-zinc-800"
         },
+        socials: {
+            github: "https://github.com/Ethanqg0",
+            linkedin: "https://www.linkedin.com/in/ethan-gutierrez-0a598124b/",
+            email: "ethan@firewave.dev",
+            youtube: "https://www.youtube.com/channel/UCm757K2A741biTx7fBhN1DQ",
+            discord: "https://discordapp.com/users/534927691812569118",
+            phone: "708-966-7431",
+        }
     },
     {
         info: {
@@ -48,6 +64,13 @@ const team = [
             source: "/team/Stock9.png",
             color: "bg-zinc-200",
             shadow: "shadow-zinc-800"
+        },
+        socials: {
+            github: "https://github.com/Ahljenn",
+            linkedin: "https://www.linkedin.com/in/ahljenn-mallari-859026164/",
+            email: "aj@firewave.dev",
+            discord: "https://discordapp.com/users/231887884351700993",
+            phone: "707-567-5461",
         }
     },
     {
@@ -65,6 +88,13 @@ const team = [
             source: "/team/Stock10.jpg",
             color: "bg-stone-200",
             shadow: "shadow-stone-800"
+        },
+        socials: {
+            github: "https://github.com/alexeydavydov45",
+            linkedin: "https://www.linkedin.com/in/alexey-davydov-09ba3a285/",
+            email: "alexey@firewave.dev",
+            discord: "https://discordapp.com/users/260256832340099082",
+            phone: "925-434-8584",
         }
     },
     {
@@ -82,6 +112,13 @@ const team = [
             source: "/team/Stock11.jpg",
             color: "bg-gray-200",
             shadow: "shadow-gray-800"
+        },
+        socials: {
+            github: "https://github.com/matthewm04",
+            linkedin: "https://www.linkedin.com/in/matthew-mahoney-b406b5167/",
+            email: "matthew@firewave.dev",
+            discord: "https://discordapp.com/users/230556962159460355",
+            phone: "925-322-3975",
         }
     },
     {
@@ -91,14 +128,21 @@ const team = [
             description: "Hi! I'm Christian, and I'm a web designer at Firewave Development. I'm a web designer who loves to make things look good and work well.",
         },
         details: {
-            education: "unsure",
-            experience: "Firewave, theCoderSchool",
+            education: "B.S. Computer Science - University of California, Davis",
+            experience: "Firewave, theCoderSchool, Hack Reactor",
             skills: "Figma, Adobe XD, Adobe Photoshop, Adobe Illustrator",
         },
         image: {
             source: "/team/Stock6.jpg",
             color: "bg-slate-200",
             shadow: "shadow-slate-800"
+        },
+        socials: {
+            github: "https://github.com/1christianfelix",
+            linkedin: "https://www.linkedin.com/in/christianfelix97/",
+            email: "christian@firewave.dev",
+            discord: "https://discordapp.com/users/365459904758284289",
+            phone: "707-342-8154",
         }
     },
 

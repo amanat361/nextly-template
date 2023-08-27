@@ -4,8 +4,8 @@ import SectionTitle from "../components/sectionTitle";
 import Footer from "../components/footer";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faGraduationCap, faBriefcase, faBolt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin, faTwitter, faYoutube, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faGraduationCap, faBriefcase, faBolt, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import team from "../components/team";
 
@@ -40,12 +40,16 @@ const Details = ( { education, experience, skills } ) => {
 }
 
 
-const Socials = () => {
+const Socials = ( { github, linkedin, twitter, email, phone, youtube, discord } ) => {
     return (
-        <div className="flex gap-8 justify-center flex-1">
-            <FontAwesomeIcon icon={faGithub} className="h-6" />
-            <FontAwesomeIcon icon={faLinkedin} className="h-6" />
-            <FontAwesomeIcon icon={faTwitter} className="h-6" />
+        <div className="flex gap-8 justify-center items-center">
+            {github && <a href={github} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} className="h-6 hover:text-slate-700" /></a>}
+            {linkedin && <a href={linkedin} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="h-6 hover:text-blue-600" /></a>}
+            {twitter && <a href={twitter} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} className="h-6 hover:text-sky-600" /></a>}
+            {email && <a href={`mailto:${email}`} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope} className="h-6 hover:text-red-800" /></a>}
+            {phone && <a href={`tel:${phone}`} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faPhone} className="h-5 hover:text-green-600" /></a>}
+            {youtube && <a href={youtube} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faYoutube} className="h-6 hover:text-red-600" /></a>}
+            {discord && <a href={discord} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faDiscord} className="h-6 hover:text-[#5865F2]" /></a>}
         </div>
     );
 }
@@ -58,7 +62,6 @@ const Header = ( {name, title, description} ) => {
                     <h1 className="text-2xl font-bold">{name}</h1>
                     <h2 className="text-xl font-semibold">{title}</h2>
                 </div>
-                <Socials />
             </div>
             <p className="text-lg">{description}</p>
         </div>
@@ -71,13 +74,14 @@ const Photo = ({ image }) => {
     );
 }
 
-const Member = ({ info, details, image, flipped }) => {
+const Member = ({ info, details, image, socials, flipped }) => {
     return (
         <div className={`flex flex-col sm:flex-row p-4 gap-8 ${flipped && 'sm:flex-row-reverse'}`}>
             <Photo image={...image} />
             <div className="flex flex-col justify-center gap-4 sm:w-1/2">
                 <Header {...info} />
                 <Details {...details} />
+                <Socials {...socials} />
             </div>
         </div>
     );
