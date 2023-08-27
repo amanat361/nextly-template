@@ -68,16 +68,16 @@ const Header = ( {name, title, description} ) => {
     );
 }
 
-const Photo = ({ image }) => {
+const Photo = ({ image, flipped }) => {
     return (
-        <img src={image.source} className={`h-[50vh] sm:w-1/2 object-cover object-top rounded-3xl shadow-2xl dark:shadow-none ${image.shadow} ${image.color}`}/>
+        <img src={image.source} className={`${flipped ? 'sm:-skew-y-3' : 'sm:skew-y-3'} -translate-y-4 aspect-1 sm:w-1/3 object-cover object-top rounded-3xl shadow-2xl dark:shadow-none ${image.shadow} ${image.color}`}/>
     );
 }
 
 const Member = ({ info, details, image, socials, flipped }) => {
     return (
-        <div className={`flex flex-col sm:flex-row p-4 gap-8 ${flipped && 'sm:flex-row-reverse'}`}>
-            <Photo image={...image} />
+        <div className={`flex flex-col sm:flex-row p-4 gap-8 border-b-2 ${flipped && 'sm:flex-row-reverse'}`}>
+            <Photo image={...image} flipped={flipped}/>
             <div className="flex flex-col justify-center gap-4 sm:w-1/2">
                 <Header {...info} />
                 <Details {...details} />
@@ -115,7 +115,7 @@ const Team = () => {
                 We're not just about efficiency; we're about crafting solutions that reshape industries. Our track record speaks volumes – clients have witnessed an astounding 80% reduction in operational time through our program rebuilds.
             </SectionTitle>
 
-            <div className="flex flex-col max-w-6xl mx-auto gap-20">
+            <div className="flex flex-col max-w-6xl mx-auto gap-4">
                 {team.map((member, index) => <Member {...member} flipped={index%2==0} key={index} />)}
             </div>
             
