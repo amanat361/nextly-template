@@ -1,6 +1,8 @@
 import React from "react";
 import Container from "./container";
 
+import Link from "next/link";
+
 const Cta = () => {
   return (
     <Container>
@@ -14,13 +16,11 @@ const Cta = () => {
           </p>
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
-          <a
-            href="https://github.com/web3templates"
-            target="_blank"
-            rel="noopener"
+          <Link
+            href="/pricing?#Unsure?"
             className="inline-block py-3 mx-auto text-lg font-medium text-center text-rose-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 ">
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </Container>

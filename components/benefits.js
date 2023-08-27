@@ -8,13 +8,13 @@ const Benefits = (props) => {
   const { data } = props;
   return (
     <>
-      <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
+      <Container className="flex flex-wrap mb-10 lg:gap-10 lg:flex-nowrap ">
         <div
           className={`flex items-center justify-center w-full lg:w-1/2 ${
             props.imgPos === "right" ? "lg:order-1" : ""
           }`}>
           <div>
-            <Lottie animationData={data.animation} loop={true} />
+            <Lottie animationData={data.animation} loop={true} className="sm:h-[36rem]"/>
           </div>
         </div>
 
