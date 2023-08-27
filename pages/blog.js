@@ -47,7 +47,7 @@ const Blog = () => {
                 pretitle='Our Blog'
                 title='Read our latest posts'
             >
-                We're not just about efficiency; we're about crafting solutions that reshape industries. Our track record speaks volumes – clients have witnessed an astounding 80% reduction in operational time through our program rebuilds.
+                We like to write about the latest technologies and trends in web development. Whether you're looking for a tutorial on how to build your own website or just want to learn more about what's happening in the industry, we've got you covered!
             </SectionTitle>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 max-w-6xl mx-auto gap-4 p-4">

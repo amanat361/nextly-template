@@ -74,7 +74,7 @@ const Projects = () => {
                 pretitle='Our Work'
                 title='Check Out What We Do'
             >
-                We're not just about efficiency; we're about crafting solutions that reshape industries. Our track record speaks volumes – clients have witnessed an astounding 80% reduction in operational time through our program rebuilds.
+                We like to build cool stuff. Whether you're looking for a custom website, a data science project, or a full stack application, we might know a thing or two. Check out some of our recent projects below to see what we've been up to. Let's get your project on the list next!
             </SectionTitle>
 
             <section className='px-6 max-w-4xl mx-auto'>
