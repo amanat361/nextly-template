@@ -10,6 +10,7 @@ const Navbar = () => {
     "Team": "/team",
     "Blog": "/blog",
     "Pricing": "/pricing",
+    "Contact": "/contact",
   };
 
   return (

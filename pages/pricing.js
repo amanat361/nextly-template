@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faX, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 
 import { Card, Alert } from 'flowbite-react';
-import Contact from "../components/contact";
 import plans from "../components/pricing";
+import PopupWidget from "../components/popupWidget";
 
 function Feature( { content } ) {
     return (
@@ -105,14 +105,8 @@ const Pricing = () => {
                 <PricingCard {...plan} />
             ))}
             </div>
-
-            <SectionTitle pretitle="Unsure?" title="Contact us for a free consultation.">
-                We understand that choosing the right plan can be difficult. That's why we offer a free consultation to help you decide which plan is right for you. Contact us today to get started.
-            </SectionTitle>
-            
-            <Contact />
-
             <Footer />
+            <PopupWidget />
         </>
     );
 }

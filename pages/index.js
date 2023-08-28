@@ -52,8 +52,7 @@ const Home = () => {
       </SectionTitle>
       <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+        We've got answers to your burning questions. If you don't see what you're looking for, feel free to reach out to us directly.
       </SectionTitle>
       <Faq />
       <Cta />

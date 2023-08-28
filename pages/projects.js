@@ -3,6 +3,7 @@ import Navbar from "../components/navbar"
 import Work from "../components/work"
 import SectionTitle from "../components/sectionTitle"
 import Footer from "../components/footer"
+import PopupWidget from "../components/popupWidget"
 
 const Projects = () => {
 
@@ -88,8 +89,8 @@ const Projects = () => {
                     <Work key={workItem.title} item={workItem} />
                 ))}
             </section>
-
             <Footer />
+            <PopupWidget />
         </>
     )
 }

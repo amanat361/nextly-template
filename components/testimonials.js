@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Container from "./container";
 
-import userOneImg from "../public/img/user1.jpg";
+import userOneImg from "../public/testimonials/first.jpg";
 import userTwoImg from "../public/img/user2.jpg";
 import userThreeImg from "../public/img/user3.jpg";
 
@@ -13,39 +13,39 @@ const Testimonials  = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Firewave transformed our project with <Mark>cutting-edge tech</Mark>. Their personal touch and dedication made us feel like part of their family.
+              Amazing job! Communication is 5/5, Quality is 5/5, Timeliness is 5/5; Would <Mark>love to work together</Mark> with Sam again in the future for more projects. 
             </p>
 
             <Avatar
               image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
+              name="Lakshman Mody"
+              title="Co-founder of visualstaging.art"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Innovative problem solvers, top-tier talent. Firewave delivered exceptional results and <Mark>streamlined</Mark> our operations.
+              Sam's technical ability and crystal clear communication made him a <Mark>pleasure to work with</Mark>. I wouldn't be where I am today without his help.
             </p>
 
             <Avatar
               image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              name="Anthony Mohammadi"
+              title="Program Operations at DVC"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Firewave's passion and expertise are unmatched. They <Mark>elevated</Mark> our project and left a lasting impact on our digital presence.
+              Sam upgraded our entire tech stack in a <Mark>matter of days</Mark> and we couldn't be happier with the results. He's also a great guy to work with!
             </p>
 
             <Avatar
               image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
+              name="Marcy Simons"
+              title="Owner of Ashby Flowers"
             />
           </div>
         </div>
@@ -57,11 +57,11 @@ const Testimonials  = () => {
 function Avatar(props) {
   return (
     <div className="flex items-center mt-8 space-x-3">
-      <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+      <div className="rounded-full overflow-hidden shadow-lg">
         <Image
           src={props.image}
-          width="40"
-          height="40"
+          width="50"
+          height="50"
           alt="Avatar"
           placeholder="blur"
         />

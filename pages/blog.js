@@ -7,6 +7,7 @@ import Image from "next/image";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import PopupWidget from "../components/popupWidget";
 
 const Post = ({ image, title, date, content }) => {
     return (
@@ -70,9 +71,9 @@ const Blog = () => {
                     content="NextJS is a React framework that allows you to build static and server-side rendered websites. It's a great choice for building websites that need to be fast and SEO-friendly. In this tutorial, we'll show you how to build a website with NextJS in just a few steps!"
                 />
             </div>
-
-
             <Footer />
+
+            <PopupWidget />
         </>
     );
 }

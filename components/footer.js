@@ -4,18 +4,21 @@ import React from "react";
 import Container from "./container";
 
 export default function Footer() {
-  const navigation = {
+  const navigation1 = {
     "Home": "/",
     "Projects": "/projects",
     "Team": "/team",
+  };
+  const navigation2 = {
     "Blog": "/blog",
     "Pricing": "/pricing",
+    "Contact": "/contact",
   };
   const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className="relative">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-6">
           <div className="lg:col-span-2">
             <div>
               {" "}
@@ -34,13 +37,24 @@ export default function Footer() {
 
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              {Object.keys(navigation).map((item, index) => (
-                <Link key={index} href={"/"+navigation[item]} className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-rose-500 focus:text-rose-500 focus:bg-rose-100 focus:outline-none dark:focus:bg-trueGray-700">                 
+              {Object.keys(navigation1).map((item, index) => (
+                <Link key={index} href={"/"+navigation1[item]} className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-rose-500 focus:text-rose-500 focus:bg-rose-100 focus:outline-none dark:focus:bg-trueGray-700">                 
                     {item}
                 </Link>
               ))}
             </div>
           </div>
+
+          <div>
+            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+              {Object.keys(navigation2).map((item, index) => (
+                <Link key={index} href={"/"+navigation2[item]} className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-rose-500 focus:text-rose-500 focus:bg-rose-100 focus:outline-none dark:focus:bg-trueGray-700">                 
+                    {item}
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
@@ -54,28 +68,28 @@ export default function Footer() {
             <div>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
-                href="https://twitter.com/web3templates"
+                href="/"
                 target="_blank"
                 rel="noopener">
                 <span className="sr-only">Twitter</span>
                 <Twitter />
               </a>
               <a
-                href="https://facebook.com/web3templates"
+                href="/"
                 target="_blank"
                 rel="noopener">
                 <span className="sr-only">Facebook</span>
                 <Facebook />
               </a>
               <a
-                href="https://instagram.com/web3templates"
+                href="/"
                 target="_blank"
                 rel="noopener">
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
               <a
-                href="https://linkedin.com/"
+                href="/"
                 target="_blank"
                 rel="noopener">
                 <span className="sr-only">Linkedin</span>
@@ -86,16 +100,16 @@ export default function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()}. Made with ♥ by
+          Copyright © {new Date().getFullYear()} Firewave LLC. Made with ♥ by
           <a
-            className="underline ml-1"
+            className="underline ml-1 whitespace-nowrap"
             href="https://www.linkedin.com/in/samin-amanat/"
             target="_blank"
             rel="noopener"
           >
             Sam Amanat.
           </a>
-          <span className="ml-2">Illustrations from</span>
+          <span className="ml-1">Illustrations from</span>
           <a
             className="underline ml-1"
             href="https://lottiefiles.com/"

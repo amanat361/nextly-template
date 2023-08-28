@@ -8,6 +8,7 @@ import { faGithub, faLinkedin, faTwitter, faYoutube, faDiscord } from "@fortawes
 import { faGraduationCap, faBriefcase, faBolt, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import team from "../components/team";
+import PopupWidget from "../components/popupWidget";
 
 function Detail(props) {
     return (
@@ -70,7 +71,7 @@ const Header = ( {name, title, description} ) => {
 
 const Photo = ({ image, flipped }) => {
     return (
-        <img src={image.source} className={`${flipped ? 'sm:-skew-y-3' : 'sm:skew-y-3'} -translate-y-4 aspect-1 sm:w-1/3 object-cover object-top rounded-3xl shadow-2xl dark:shadow-none ${image.shadow} ${image.color}`}/>
+        <img src={image.source} className={`aspect-1 sm:w-1/3 object-cover object-top rounded-3xl shadow-2xl dark:shadow-none ${image.shadow} ${image.color}`}/>
     );
 }
 
@@ -120,6 +121,8 @@ const Team = () => {
             </div>
             
             <Footer />
+
+            <PopupWidget />
         </>
     );
 }

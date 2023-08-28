@@ -54,7 +54,7 @@ export default function Contact() {
                 </div>
             </div>
 
-            <div className="flex flex-col gap-4 col-span-full sm:col-span-1">
+            <div className="flex flex-col-reverse sm:flex-col gap-4 col-span-full sm:col-span-1">
                 <Info icon={faEnvelope} title="Email us" content="contact@firewave.dev" link="mailto:contact@firewave.dev" />
                 <Info icon={faPhone} title="Call us" content="925-451-2502" link="tel:925-451-2502" />
                 <Info icon={faMapPin} title="Location" content="San Francisco, CA" link="https://goo.gl/maps/inevejAFW6WsbnsK6" />
