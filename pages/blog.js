@@ -9,17 +9,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import PopupWidget from "../components/popupWidget";
 
-const Post = ({ image, title, date, content }) => {
+import Link from "next/link";
+
+import posts from "../data/posts";
+
+const Post = ({ image, title, date, hook, content, url }) => {
     return (
-        <div className="flex flex-col items-start justify-center w-full gap-4">
+        <div className="flex flex-col items-start w-full gap-4">
             <Image src={image} alt="NextJS Blog" width={500} height={500} className="rounded-lg aspect-[5/3] object-cover"/>
             <h1 className="text-3xl font-medium text-gray-800 dark:text-gray-100">{title}</h1>
             <p className="text-gray-500 dark:text-gray-400">{date}</p>
-            <p className="text-gray-500 max-w-none dark:text-gray-400">{content}</p>
-            <a className="flex gap-2 w-full justify-end items-center p-4 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition cursor-pointer rounded">
+            <p className="text-gray-500 max-w-none dark:text-gray-400">{hook}</p>
+            <Link href={"/blog/"+url} className="mt-auto flex gap-2 w-full justify-end items-center p-4 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition cursor-pointer rounded">
                 <span className="text-sm">Read More</span>
                 <FontAwesomeIcon icon={faArrowRight} className="ml-1 h-4" />
-            </a>
+            </Link>
         </div>
     );
 }
@@ -52,24 +56,9 @@ const Blog = () => {
             </SectionTitle>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 max-w-6xl mx-auto gap-4 p-4">
-                <Post
-                    image='/blog/Stock1.jpg'
-                    title='How to Build a Website with NextJS'
-                    date='August 31, 2021'
-                    content="NextJS is a React framework that allows you to build static and server-side rendered websites. It's a great choice for building websites that need to be fast and SEO-friendly. In this tutorial, we'll show you how to build a website with NextJS in just a few steps!"
-                />
-                <Post
-                    image='/blog/Stock2.jpg'
-                    title='How to Build a Website with NextJS'
-                    date='August 31, 2021'
-                    content="NextJS is a React framework that allows you to build static and server-side rendered websites. It's a great choice for building websites that need to be fast and SEO-friendly. In this tutorial, we'll show you how to build a website with NextJS in just a few steps!"
-                />
-                <Post
-                    image='/blog/Stock3.jpg'
-                    title='How to Build a Website with NextJS'
-                    date='August 31, 2021'
-                    content="NextJS is a React framework that allows you to build static and server-side rendered websites. It's a great choice for building websites that need to be fast and SEO-friendly. In this tutorial, we'll show you how to build a website with NextJS in just a few steps!"
-                />
+                {posts.map((post) => (
+                    <Post key={post.title} {...post} />
+                ))}
             </div>
             <Footer />
 
