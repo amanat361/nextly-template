@@ -19,7 +19,7 @@ export default function BlogPost({ post }) {
 
             <div className="max-w-6xl mx-auto p-4 flex flex-col gap-4">
                 <Image src={post.image} alt="NextJS Blog" width={2000} height={2000} className="w-full rounded-lg aspect-2 object-cover"/>
-                <ReactMarkdown className="mx-auto prose dark:prose-invert max-w-none" children={post.content} remarkPlugins={[remarkGfm]} />
+                <ReactMarkdown className="mx-auto prose prose-zinc dark:prose-invert max-w-none" children={post.content} remarkPlugins={[remarkGfm]} />
             </div>
 
             <Footer />  
