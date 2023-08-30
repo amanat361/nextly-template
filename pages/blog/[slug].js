@@ -18,7 +18,7 @@ export default function BlogTemplate( { markdownBody } ) {
             </Head>
             <Navbar />
             <ReactMarkdown
-                className="prose max-w-6xl mx-auto"
+                className="prose dark:prose-invert max-w-6xl mx-auto p-4"
                 children={markdownBody}
                 remarkPlugins={[remarkGfm]}
                 components={{
